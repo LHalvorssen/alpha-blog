@@ -10,8 +10,13 @@
   </head>
 
   <body>
+    <%= render 'layouts/navbar'%>
     <%= render 'layouts/messages' %>
-   
+   <div class= "container">
     <%= yield %>
+
+    <%=render 'layouts/footer' %>
+    
+    </div>
   </body>
 </html>

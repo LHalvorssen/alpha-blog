@@ -1,2 +1,49 @@
+$navbar-default-bg: white;
+
+#logo {
+	float: left;
+	font-size: 1.7rem;
+	color: #777777;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	font-weight: bold;
+}
+
+#logo:hover {
+	color: #4149c3;
+	text-decoration: none;
+}
+
+.jumbotron {
+	background-image: -webkit-linear-gradient(
+			rgba(0, 0, 0, 0.3),
+			rgba(0, 0, 0, 0.3)
+		),
+		url(/Greece.jpeg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url(/Greece.jpeg);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	background-attachment: fixed;
+	padding: 10rem;
+}
+
+.headline {
+	position: absolute;
+	width: 1140px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-shadow: 0px 1px 14px rgba(0, 0, 0, 1);
+}
+
+.footer {
+	margin-top: 45px;
+	padding-top: 5px;
+	border-top: 1px solid #eaeaea;
+	color: #777;
+}
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
