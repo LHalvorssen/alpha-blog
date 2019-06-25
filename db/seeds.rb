@@ -5,7 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-50.times do
-Article.create(title: 'Hello test', description: 'this is so that my website blog could function properly', user_id: 2)
+20.times do
+Article.create(title: 'This is Diego', description: 'Lorizzle ass dolor im in the shizzle funky fresh, gangster check it out elit. Nullizzle cool velizzle, aliquet volutpizzle, suscipit quis, gravida vizzle, arcu. Pellentesque tortizzle. Sed erizzle. Sheezy i saw beyonces tizzles and my pizzle went crizzle shiz dapibizzle turpizzle tempizzle pizzle. Shizzlin dizzle pellentesque mah nizzle izzle turpis. Vestibulum in fizzle. Hizzle hizzle rhoncizzle brizzle. Away bow wow wow check out this platea dictumst.', user_id: 3)
 
 end
