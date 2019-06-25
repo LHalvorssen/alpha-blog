@@ -5,3 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+50.times do
+Article.create(title: 'Hello test', description: 'this is so that my website blog could function properly', user_id: 2)
+
+end
