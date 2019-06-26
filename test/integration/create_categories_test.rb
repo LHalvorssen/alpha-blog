@@ -14,14 +14,14 @@ class CreateCategoriesTest < ActionDispatch::IntegrationTest
     end
 
     test "invalid categories submission results in failure" do
-    get new_category_path
-    assert_template 'categories/new'
-    assert_no_difference 'Category.count', 1 do
-        post categories_path, params:{ category:{name: " ", description: " "}}
+        get new_category_path
+        assert_template 'categories/new'
+        assert_no_difference 'Category.count', 1 do
+            post categories_path, params:{ category:{name: " ", description: " "}}
         end
-    assert_template 'categories/new'
-    assert_select "h2.panel-title"
-    assert_select 'div.panel-body'
+        assert_template 'categories/new'
+        assert_select "h2.panel-title"
+        assert_select 'div.panel-body'
     end
 
 end
