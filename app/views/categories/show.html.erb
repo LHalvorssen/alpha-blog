@@ -1,6 +1,13 @@
 <h1 align= "center"> <%= @category.name.capitalize %> </h1>
+<h4 align= "center"> <%= @category.description %> </h4>
+
 
 <div align="center">
+    <% if logged_in? and current_user.admin? %>
+    <div class= "row"> 
+        <span class="badge"> <%= link_to "Edit Category", edit_category_path(@category) %> </span>
+    </div>
+    <%end%>
     <%= will_paginate @category_articles %>
 </div>
 
