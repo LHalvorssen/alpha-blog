@@ -78,6 +78,23 @@ $navbar-default-bg: white;
 	padding-left: 0;
 }
 
+.badge{
+	background-color: #ffffff;
+	color: #b8b8b8;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.badge :hover{
+	color: #b8b8b8;
+	text-decoration: none;
+}
+
+.input_checkbox input{
+	width: auto !important;
+}
 .articleshow {
 	display: flex;
 }

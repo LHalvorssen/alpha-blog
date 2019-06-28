@@ -5,7 +5,9 @@
         <h2><%= @article.title %> </h2>
         <hr>
         <%= simple_format(@article.description) %>
-        
+        <% if @article.categories.any? %>
+            <p> Categories: <%= render @article.categories %> </p>
+        <% end %>
         <div class="row" align="left">
             <div class= "article-actions articleshow">   
                 <% if logged_in? && (current_user == @article.user || current_user.admin?) %>
